@@ -22,7 +22,7 @@
           class="skill-card__icon"
           [class.skill-card__icon--frontend]="category.name === 'Langages'"
           [class.skill-card__icon--backend]="category.name === 'Frameworks'"
-          [class.skill-card__icon--mobile]="category.name === 'Base de données'"
+          [class.skill-card__icon--mobile]="category.name === 'Bases de données'"
           [class.skill-card__icon--tools]="category.name === 'Outils'"
         >
           @switch (category.name) {
@@ -36,7 +36,7 @@
                 <path d="M12 3 4 7v10l8 4 8-4V7l-8-4Zm0 0v18M4 7l8 4 8-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             }
-            @case ('Base de données') {
+            @case ('Bases de données') {
               <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none">
                 <path d="M5 7c0-2 14-2 14 0v10c0 2-14 2-14 0V7Zm0 0c0 2 14 2 14 0M5 12c0 2 14 2 14 0" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
               </svg>

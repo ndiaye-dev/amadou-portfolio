@@ -1,10 +1,10 @@
 .portfolio-shell {
   min-height: 100vh;
-  background: #07080f;
+  background: var(--portfolio-section-bg);
 }
 
 .hero-stage {
-  background: #03050d;
+  background: var(--portfolio-section-bg);
   scroll-margin-top: 3.95rem;
 }
 
@@ -19,7 +19,7 @@
   background:
     radial-gradient(circle at 38% 58%, rgba(72, 75, 186, 0.22), transparent 31rem),
     radial-gradient(circle at 78% 72%, rgba(52, 75, 165, 0.13), transparent 23rem),
-    linear-gradient(180deg, #060912 0%, #070914 45%, #03050c 100%);
+    var(--portfolio-section-bg);
   min-height: 655px;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .main-content {
-  background: #07080f;
+  background: var(--portfolio-section-bg);
   padding-bottom: 2.5rem;
 }
 

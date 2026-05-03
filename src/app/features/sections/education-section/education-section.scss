@@ -3,9 +3,9 @@
   isolation: isolate;
   overflow: hidden;
   background:
-    radial-gradient(circle at 28% 26%, rgba(37, 99, 235, 0.16), transparent 24rem),
-    radial-gradient(circle at 76% 62%, rgba(124, 58, 237, 0.14), transparent 25rem),
-    linear-gradient(180deg, #070810 0%, #0b0c14 48%, #07080f 100%);
+    radial-gradient(circle at 28% 26%, rgba(37, 99, 235, 0.08), transparent 24rem),
+    radial-gradient(circle at 76% 62%, rgba(124, 58, 237, 0.07), transparent 25rem),
+    var(--portfolio-section-bg);
   color: #f8fafc;
   margin-inline: calc(50% - 50vw);
   padding: 2.75rem 0 5.8rem;
@@ -18,8 +18,8 @@
   inset: 0;
   z-index: -2;
   background-image:
-    linear-gradient(rgba(96, 165, 250, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(96, 165, 250, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(96, 165, 250, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(96, 165, 250, 0.025) 1px, transparent 1px);
   background-size: 4rem 4rem;
   mask-image: radial-gradient(circle at 50% 34%, #000 0%, transparent 72%);
 }
@@ -31,7 +31,7 @@
   z-index: -1;
   height: 30rem;
   border-radius: 999px;
-  background: radial-gradient(circle, rgba(79, 70, 229, 0.25), transparent 68%);
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.12), transparent 68%);
   filter: blur(1rem);
 }
 
@@ -42,20 +42,20 @@
   height: 18rem;
   border-radius: 999px;
   filter: blur(2.4rem);
-  opacity: 0.54;
+  opacity: 0.32;
   animation: education-orb 8s ease-in-out infinite alternate;
 }
 
 .education__orb--blue {
   top: 7rem;
   left: 10%;
-  background: rgba(37, 99, 235, 0.28);
+  background: rgba(37, 99, 235, 0.18);
 }
 
 .education__orb--violet {
   right: 11%;
   bottom: 4rem;
-  background: rgba(124, 58, 237, 0.28);
+  background: rgba(124, 58, 237, 0.16);
   animation-delay: -3s;
 }
 

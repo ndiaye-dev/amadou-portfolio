@@ -67,16 +67,16 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: ['Angular', 'React', 'Spring Boot', 'Flutter']
   },
   {
-    name: 'Base de données',
+    name: 'Bases de données',
     skills: ['MySQL', 'PostgreSQL']
-  },
-  {
-    name: 'Outils',
-    skills: ['Git', 'GitHub', 'Vercel', 'Postman', 'IntelliJ IDEA', 'Visual Studio Code']
   },
   {
     name: 'UI/UX',
     skills: ['Figma']
+  },
+  {
+    name: 'Outils',
+    skills: ['Git', 'GitHub', 'Vercel', 'Postman', 'IntelliJ IDEA', 'Visual Studio Code']
   }
 ];
 
@@ -86,7 +86,6 @@ export const EDUCATION: EducationItem[] = [
     institution: 'Université Dakar-Bourguiba',
     location: 'Dakar, Sénégal',
     period: '2024 - 2025',
-    status: 'En cours',
     description:
       'Spécialisation en développement logiciel, architecture applicative et gestion de projets informatiques.'
   },

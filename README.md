@@ -2,6 +2,11 @@
 
 Portfolio professionnel développé avec Angular (standalone components) pour présenter mon profil, mes compétences, mes projets et mes coordonnées.
 
+## Aperçu en ligne
+
+- Portfolio : https://amadou-portfolio-dev.vercel.app
+- CV : https://amadou-portfolio-dev.vercel.app/cv-amadou-ndiaye.pdf
+
 ## Stack
 
 - Angular 21+
@@ -48,4 +53,5 @@ Le projet inclut un `vercel.json` adapté à une application Angular SPA.
 - Email : amadou.ndiaye.dev@gmail.com
 - Téléphone : +221 77 385 53 58
 - GitHub : https://github.com/ndiaye-dev
+- LinkedIn : https://www.linkedin.com/in/amadou-ndiaye-1b3b86387/
 
