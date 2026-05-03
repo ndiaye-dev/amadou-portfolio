@@ -1,0 +1,43 @@
+<div class="portfolio-shell">
+  <header class="topbar">
+    <a class="topbar__brand" href="#accueil">{{ profile.fullName }}</a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        @for (item of navItems; track item.fragment) {
+          <li>
+            <a
+              [class.is-active]="activeSection() === item.fragment"
+              [href]="'#' + item.fragment"
+              (click)="setActiveSection(item.fragment)"
+            >
+              {{ item.label }}
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+    <a class="topbar__cv" href="#contact" aria-label="T&eacute;l&eacute;charger le CV">
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <path d="M12 3v11m0 0 4-4m-4 4-4-4M5 20h14" />
+      </svg>
+      T&eacute;l&eacute;charger CV
+    </a>
+  </header>
+
+  <section class="hero-stage" id="accueil">
+    <div class="hero-stage__frame">
+      <div class="hero-stage__card">
+        <app-hero-section [profile]="profile" [navItems]="navItems" />
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <app-about-section [profile]="profile" />
+    <app-projects-section [projects]="projects" />
+    <app-skills-section [categories]="skillCategories" />
+    <app-education-section [education]="education" />
+    <app-contact-section [profile]="profile" [contacts]="contacts" />
+    <app-footer-section [profile]="profile" [currentYear]="currentYear" />
+  </main>
+</div>

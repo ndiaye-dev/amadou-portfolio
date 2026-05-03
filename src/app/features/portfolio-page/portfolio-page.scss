@@ -1,0 +1,193 @@
+.portfolio-shell {
+  min-height: 100vh;
+  background: #07080f;
+}
+
+.hero-stage {
+  background: #03050d;
+  scroll-margin-top: 3.95rem;
+}
+
+.hero-stage__frame {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-stage__card {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 38% 58%, rgba(72, 75, 186, 0.22), transparent 31rem),
+    radial-gradient(circle at 78% 72%, rgba(52, 75, 165, 0.13), transparent 23rem),
+    linear-gradient(180deg, #060912 0%, #070914 45%, #03050c 100%);
+  min-height: 655px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: min(1064px, calc(100% - 3rem));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 4.25rem;
+}
+
+.topbar::before {
+  content: '';
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: -1;
+  height: 4.25rem;
+  background: rgba(6, 7, 13, 0.92);
+  border-bottom: 1px solid rgba(84, 87, 112, 0.18);
+  backdrop-filter: blur(12px);
+}
+
+.topbar__brand {
+  color: #f7f8ff;
+  text-decoration: none;
+  font-size: 1.12rem;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.topbar nav {
+  justify-self: center;
+}
+
+.topbar nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.topbar nav a {
+  text-decoration: none;
+  color: #7f829e;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: color 160ms ease;
+}
+
+.topbar nav a:hover,
+.topbar nav a:focus-visible {
+  color: #f8fafc;
+}
+
+.topbar nav a.is-active {
+  color: #e2e8f0;
+  position: relative;
+}
+
+.topbar nav a.is-active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% + 0.38rem);
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 999px;
+  background: #6575ff;
+}
+
+.topbar__cv {
+  text-decoration: none;
+  color: #eef2ff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 0.82rem;
+  background: linear-gradient(130deg, #4870ff, #6d50e6);
+  border-radius: 0.95rem;
+  min-height: 2.18rem;
+  padding: 0 1.04rem;
+  box-shadow: 0 14px 25px -20px rgba(93, 90, 255, 0.95);
+}
+
+.topbar__cv svg {
+  width: 0.92rem;
+  height: 0.92rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.25;
+}
+
+.main-content {
+  background: #07080f;
+  padding-bottom: 2.5rem;
+}
+
+app-about-section,
+app-projects-section,
+app-skills-section,
+app-education-section,
+app-contact-section {
+  display: block;
+}
+
+app-projects-section,
+app-skills-section,
+app-education-section,
+app-contact-section {
+  width: min(1064px, calc(100% - 3rem));
+  margin: clamp(2.2rem, 4vw, 3rem) auto 0;
+}
+
+app-projects-section {
+  width: auto;
+  margin-top: 0;
+}
+
+app-skills-section {
+  width: auto;
+  margin-top: 0;
+}
+
+app-education-section {
+  width: auto;
+  margin-top: 0;
+}
+
+app-contact-section {
+  width: auto;
+  margin-top: 0;
+}
+
+@media (max-width: 1120px) {
+  .topbar {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 1rem;
+    padding-top: 1.25rem;
+  }
+
+  .topbar nav {
+    justify-self: start;
+  }
+
+  .topbar nav ul {
+    gap: 1.1rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    width: min(100% - 1.5rem, 1064px);
+  }
+
+  .topbar__brand {
+    font-size: 1.45rem;
+  }
+}

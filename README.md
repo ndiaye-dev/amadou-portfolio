@@ -1,59 +1,51 @@
-# AmadouPortfolio
+﻿# Portfolio d’Amadou Ndiaye
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
+Portfolio professionnel développé avec Angular (standalone components) pour présenter mon profil, mes compétences, mes projets et mes coordonnées.
 
-## Development server
+## Stack
 
-To start a local development server, run:
+- Angular 21+
+- TypeScript
+- SCSS
+- Standalone Components + Routing
 
-```bash
-ng serve
-```
+## Sections
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. Accueil / Hero
+2. À propos
+3. Projets
+4. Compétences
+5. Formation
+6. Contact
+7. Footer
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+## Lancement en local
 
 ```bash
-ng build
+npm install
+npm start
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Application disponible sur `http://localhost:4200/`.
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Build production
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+Le build est généré dans `dist/amadou-portfolio/browser`.
 
-For end-to-end (e2e) testing, run:
+## Déploiement Vercel
 
-```bash
-ng e2e
-```
+Le projet inclut un `vercel.json` adapté à une application Angular SPA.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Profil
 
-## Additional Resources
+- Nom : Amadou Ndiaye
+- Titre : Développeur Web & Mobile
+- Localisation : Dakar, Sénégal
+- Email : amadou.ndiaye.dev@gmail.com
+- Téléphone : +221 77 385 53 58
+- GitHub : https://github.com/ndiaye-dev
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

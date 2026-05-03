@@ -1,0 +1,61 @@
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__grid">
+      <section class="footer__brand" aria-label="Pr&eacute;sentation">
+        <h2>{{ profile().fullName }}</h2>
+        <p class="footer__role">D&eacute;veloppeur Full Stack</p>
+        <p>
+          D&eacute;veloppeur Web & Mobile passionn&eacute;, bas&eacute; &agrave; Dakar, S&eacute;n&eacute;gal.
+          Conception de solutions digitales modernes et performantes.
+        </p>
+      </section>
+
+      <nav class="footer__column" aria-label="Navigation footer">
+        <h3>Navigation</h3>
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">&Agrave; propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Comp&eacute;tences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <section class="footer__column" aria-label="Ressources">
+        <h3>Ressources</h3>
+        <a href="#contact">T&eacute;l&eacute;charger CV</a>
+        <a [href]="profile().github" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a [href]="profile().linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a [href]="profile().x" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+      </section>
+
+      <section class="footer__newsletter" aria-label="Newsletter">
+        <h3>Restons connect&eacute;s</h3>
+        <p>
+          Recevez mes derni&egrave;res r&eacute;alisations et mises &agrave; jour directement dans votre bo&icirc;te mail.
+        </p>
+        <form [action]="'mailto:' + profile().email" method="post" enctype="text/plain">
+          <input type="email" name="Email" placeholder="votre@email.com" aria-label="Votre email">
+          <button type="submit" aria-label="Envoyer l'email">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M21 3 10 14m11-11-7 18-4-7-7-4 18-7Z" />
+            </svg>
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; {{ currentYear() }} {{ profile().fullName }}. Tous droits r&eacute;serv&eacute;s.</p>
+      <div class="footer__socials">
+        <a [href]="profile().github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <img src="/social-icons/github.svg" alt="">
+        </a>
+        <a [href]="profile().linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="/social-icons/linkedin.svg" alt="">
+        </a>
+        <a [href]="profile().x" target="_blank" rel="noopener noreferrer" aria-label="X Twitter">
+          <img src="/social-icons/x.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

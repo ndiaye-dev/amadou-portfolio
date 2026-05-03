@@ -1,0 +1,52 @@
+<section class="education" id="formation" aria-labelledby="education-title">
+  <div class="education__orb education__orb--blue" aria-hidden="true"></div>
+  <div class="education__orb education__orb--violet" aria-hidden="true"></div>
+
+  <div class="education__heading">
+    <p class="education__eyebrow">
+      <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none">
+        <path d="M3 9.2 12 4l9 5.2-9 5.2-9-5.2Zm4 2.5v4.1c1.6 1.8 8.4 1.8 10 0v-4.1M19 10v5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      Parcours
+    </p>
+    <h2 id="education-title">Formation <span>Acad&eacute;mique</span></h2>
+    <p>
+      Mon parcours acad&eacute;mique au S&eacute;n&eacute;gal, ax&eacute; sur les technologies de l'information et le<br>
+      g&eacute;nie logiciel.
+    </p>
+  </div>
+
+  <div class="education__timeline">
+    @for (item of education(); track item.degree; let index = $index) {
+      <div class="education__row" [class.education__row--active]="index === 0">
+        <div class="education__marker" aria-hidden="true">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none">
+            <path d="M3 9.2 12 4l9 5.2-9 5.2-9-5.2Zm4 2.5v4.1c1.6 1.8 8.4 1.8 10 0v-4.1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+
+        <article class="education-card" [class.education-card--active]="index === 0">
+          <span class="education-card__index">0{{ index + 1 }}</span>
+          <p class="education-card__period">
+            <span>{{ item.period }}</span>
+            @if (item.status) {
+              <small>&bull; {{ item.status }}</small>
+            }
+          </p>
+          <h3>{{ item.degree }}</h3>
+          <p class="education-card__school">{{ item.institution }}</p>
+          <p class="education-card__location">
+            <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none">
+              <path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Zm0-8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            {{ item.location }}
+          </p>
+          @if (item.description) {
+            <p class="education-card__description">{{ item.description }}</p>
+          }
+          <div class="education-card__shine" aria-hidden="true"></div>
+        </article>
+      </div>
+    }
+  </div>
+</section>

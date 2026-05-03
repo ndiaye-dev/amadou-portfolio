@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".62" stop-color="#F3F4F6"/>
+      <stop offset="1" stop-color="#9CA3AF"/>
+    </linearGradient>
+    <linearGradient id="leftScreen" x1="170" y1="116" x2="292" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F97316"/>
+      <stop offset=".45" stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="shadow" x="80" y="40" width="560" height="260" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="22" stdDeviation="14" flood-color="#000000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="720" height="360" rx="18" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <rect x="108" y="92" width="504" height="168" rx="44" fill="#0B0B0F"/>
+    <rect x="122" y="106" width="476" height="140" rx="32" fill="#111113"/>
+    <rect x="170" y="108" width="122" height="136" rx="6" fill="url(#leftScreen)"/>
+    <rect x="292" y="108" width="270" height="136" rx="4" fill="#FFFFFF"/>
+    <circle cx="144" cy="176" r="14" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="144" cy="176" r="7" fill="#111827"/>
+
+    <text x="344" y="134" fill="#111827" font-family="Arial, sans-serif" font-size="12" font-weight="700">Catégorie</text>
+    <circle cx="488" cy="131" r="4" stroke="#111827" stroke-width="1"/>
+    <path d="m491 134 5 5" stroke="#111827" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M520 127h16M520 133h12" stroke="#111827" stroke-width="1.2" stroke-linecap="round"/>
+
+    <g font-family="Arial, sans-serif" font-size="7" fill="#111827" text-anchor="middle">
+      <text x="350" y="195">Robe</text>
+      <text x="408" y="195">Veste</text>
+      <text x="466" y="195">Sac</text>
+      <text x="350" y="232">Chemise</text>
+      <text x="408" y="232">Pantalon</text>
+      <text x="466" y="232">Boubou</text>
+    </g>
+
+    <g transform="translate(336 148)">
+      <path d="M14 3h14l8 9-7 6-3-4v27H16V14l-3 4-7-6 8-9Z" fill="#E11D48"/>
+      <path d="M16 8h10" stroke="#FDA4AF" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="21" cy="2" r="2" fill="#F8FAFC"/>
+    </g>
+
+    <g transform="translate(394 148)">
+      <path d="M13 5h18l6 11-7 4-2-5v26H16V15l-2 5-7-4 6-11Z" fill="#2563EB"/>
+      <path d="M20 5v36M25 5v36" stroke="#93C5FD" stroke-width="1.6"/>
+      <circle cx="22" cy="2" r="2" fill="#F8FAFC"/>
+    </g>
+
+    <g transform="translate(454 150)">
+      <path d="M12 17c0-9 6-15 14-15s14 6 14 15v24H12V17Z" fill="#B45309"/>
+      <path d="M20 17c0-4 2-7 6-7s6 3 6 7" stroke="#FDE68A" stroke-width="2" stroke-linecap="round"/>
+      <path d="M17 25h18" stroke="#92400E" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <g transform="translate(336 191) scale(.88)">
+      <path d="M14 4h16l8 10-8 5-2-5v25H16V14l-2 5-8-5 8-10Z" fill="#0F172A"/>
+      <path d="M20 8h8" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="22" cy="2" r="2" fill="#F8FAFC"/>
+    </g>
+
+    <g transform="translate(396 191) scale(.88)">
+      <path d="M16 5h20l-4 35H20L16 5Z" fill="#EA580C"/>
+      <path d="M20 5h12M24 8v30M29 8v30" stroke="#FDBA74" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <g transform="translate(454 191) scale(.88)">
+      <path d="M13 4h18l8 9-7 6-3-5v26H15V14l-3 5-7-6 8-9Z" fill="#CA8A04"/>
+      <path d="M17 25h14M17 31h14" stroke="#FEF3C7" stroke-width="1.4" stroke-linecap="round"/>
+      <circle cx="22" cy="2" r="2" fill="#F8FAFC"/>
+    </g>
+
+    <g fill="#F43F5E">
+      <circle cx="350" cy="144" r="2.5"/>
+      <circle cx="408" cy="144" r="2.5"/>
+      <circle cx="466" cy="144" r="2.5"/>
+      <circle cx="350" cy="187" r="2.5"/>
+      <circle cx="408" cy="187" r="2.5"/>
+      <circle cx="466" cy="187" r="2.5"/>
+    </g>
+
+    <text x="548" y="188" fill="#111827" font-family="Arial, sans-serif" font-size="14" font-weight="700" transform="rotate(90 548 188)">Catalogue</text>
+  </g>
+</svg>

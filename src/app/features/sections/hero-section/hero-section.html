@@ -1,0 +1,96 @@
+﻿<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__grid">
+    <div class="hero__content">
+      <p class="hero__badge"><span></span> Disponible pour de nouveaux projets</p>
+
+      <h1 id="hero-title">
+        D&eacute;veloppeur<br>
+        <span>Web & Mobile</span>
+      </h1>
+
+      <p class="hero__stack">Full Stack &bull; Angular &bull; Spring Boot &bull; Flutter</p>
+
+      <p class="hero__description">
+        Je con&ccedil;ois et d&eacute;veloppe des applications web et mobiles<br>
+        modernes, performantes et scalables. Bas&eacute; &agrave; Dakar, S&eacute;n&eacute;gal, je<br>
+        transforme vos id&eacute;es en solutions digitales de qualit&eacute;.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--hero-primary" href="#projets">
+          Voir mes projets
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M12 5v14m0 0 5-5m-5 5-5-5" />
+          </svg>
+        </a>
+        <a class="btn btn--hero-ghost" href="#contact">
+          Me contacter
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="m22 2-7 20-4-9-9-4 20-7Z" />
+            <path d="M22 2 11 13" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero__socials" aria-label="Liens sociaux">
+        <a [href]="profile().github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <img src="/social-icons/github.svg" alt="">
+        </a>
+        <a [href]="profile().linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="/social-icons/linkedin.svg" alt="">
+        </a>
+        <a [href]="profile().x" target="_blank" rel="noopener noreferrer" aria-label="X Twitter">
+          <img src="/social-icons/x.svg" alt="">
+        </a>
+        <a [href]="'mailto:' + profile().email" aria-label="Email">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 6h16v12H4V6Zm1.6 1.6L12 12l6.4-4.4M5.6 16.4l4.7-4M18.4 16.4l-4.7-4" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <aside class="hero__code" aria-label="Pr&eacute;sentation code">
+      <div class="hero__tag hero__tag--top">
+        <span>&#8984;</span>
+        Angular
+      </div>
+      <div class="hero__tag hero__tag--right">
+        <span>↙</span>
+        Flutter
+      </div>
+      <div class="hero__tag hero__tag--bottom">
+        <span>&#8636;</span>
+        Spring Boot
+      </div>
+
+      <div class="hero__code-header">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+        <small>portfolio.tsx</small>
+      </div>
+
+      <pre><span class="k">const</span> <span class="n">developer</span> = &#123;
+  <span class="p">name:</span> <span class="v">"{{ profile().fullName }}"</span>,
+  <span class="p">role:</span> <span class="v">"Full Stack Developer"</span>,
+  <span class="p">location:</span> <span class="v">"{{ profile().location }}"</span>,
+  <span class="p">stack:</span> [
+    <span class="v">"Angular"</span>, <span class="v">"Spring Boot"</span>, <span class="v">"Flutter"</span>
+  ],
+  <span class="p">available:</span> <span class="b">true</span>,
+&#125;;</pre>
+
+      <div class="hero__status">
+        <span>main branch</span>
+        <span><i></i> En ligne</span>
+      </div>
+    </aside>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <span>&darr;</span>
+  </div>
+</section>
+

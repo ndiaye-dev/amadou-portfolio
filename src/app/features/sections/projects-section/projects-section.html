@@ -1,0 +1,85 @@
+<section class="projects" id="projets" aria-labelledby="projects-title">
+  <div class="projects__heading">
+    <p class="projects__eyebrow">
+      <svg aria-hidden="true" viewBox="0 0 24 24">
+        <path d="M4 6h16v12H4V6Zm2 2v8h12V8H6Z" />
+      </svg>
+      Mes R&eacute;alisations
+    </p>
+    <h2 id="projects-title">
+      Projets qui font la <span>diff&eacute;rence</span>
+    </h2>
+    <p>
+      D&eacute;couvrez une s&eacute;lection de mes projets r&eacute;cents, con&ccedil;us avec passion et rigueur<br>
+      technique pour r&eacute;pondre &agrave; des besoins concrets.
+    </p>
+  </div>
+
+  <div class="projects__grid">
+    @for (project of projects(); track project.name) {
+      <article class="project-card">
+        <div
+          class="project-card__visual"
+          [class.project-card__visual--clinic]="$index === 0"
+          [class.project-card__visual--business]="$index === 1"
+          [class.project-card__visual--mobile]="$index === 2"
+        >
+          <span class="project-card__type">
+            {{ project.type.includes('Mobile') ? 'Application Mobile' : 'Application Web' }}
+          </span>
+
+          @switch ($index) {
+            @case (0) {
+              <img class="project-card__image" src="/senclinic-card.svg" alt="Aper&ccedil;u dashboard SenClinic">
+            }
+            @case (1) {
+              <img class="project-card__image" src="/senbusiness-card.svg" alt="Aper&ccedil;u dashboard SenBusiness">
+            }
+            @default {
+              <img class="project-card__image" src="/shopsenegal-card.svg?v=2" alt="Aper&ccedil;u mobile ShopS&eacute;n&eacute;gal">
+            }
+          }
+        </div>
+
+        <div class="project-card__body">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+
+          <div class="project-card__stack">
+            @for (tech of project.technologies.slice(0, 3); track tech) {
+              <span>{{ tech }}</span>
+            }
+          </div>
+
+          <div class="project-card__actions">
+            <a
+              class="project-card__link project-card__link--code"
+              [class.project-card__link--disabled]="!project.codeUrl"
+              [href]="project.codeUrl || '#projets'"
+              [attr.target]="project.codeUrl ? '_blank' : null"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 3v12m0 0 4-4m-4 4-4-4M6 21h12" />
+              </svg>
+              Code
+            </a>
+
+            <a
+              class="project-card__link project-card__link--demo"
+              [class.project-card__link--disabled]="!project.demoUrl"
+              [href]="project.demoUrl || '#projets'"
+              [attr.target]="project.demoUrl ? '_blank' : null"
+              rel="noopener noreferrer"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M14 5h5v5m0-5L10 14M7 7h4M5 5v14h14v-4" />
+              </svg>
+              D&eacute;mo
+            </a>
+          </div>
+        </div>
+      </article>
+    }
+  </div>
+</section>

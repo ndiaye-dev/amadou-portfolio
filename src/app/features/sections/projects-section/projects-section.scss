@@ -1,0 +1,217 @@
+.projects {
+  background: #07080f;
+  color: #f8fafc;
+  margin-inline: calc(50% - 50vw);
+  padding: 2.55rem 0 1.6rem;
+  scroll-margin-top: 4.25rem;
+}
+
+.projects__heading {
+  width: min(1064px, calc(100% - 3rem));
+  margin-inline: auto;
+  text-align: center;
+}
+
+.projects__eyebrow {
+  width: fit-content;
+  margin: 0 auto 0.9rem;
+  color: #3487ff;
+  background: rgba(12, 18, 42, 0.78);
+  border: 1px solid rgba(62, 93, 181, 0.45);
+  border-radius: 999px;
+  padding: 0.45rem 0.92rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.projects__eyebrow svg {
+  width: 0.86rem;
+  height: 0.86rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+}
+
+.projects__heading h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 2.58rem;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.projects__heading h2 span {
+  background: linear-gradient(100deg, #3f84ff 0%, #8a61ff 92%);
+  background-clip: text;
+  color: transparent;
+}
+
+.projects__heading > p:not(.projects__eyebrow) {
+  margin: 0.82rem auto 0;
+  color: #cfd2e8;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.projects__grid {
+  width: min(1064px, calc(100% - 3rem));
+  margin: 3.6rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.65rem;
+}
+
+.project-card {
+  overflow: hidden;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(70, 73, 102, 0.38);
+  background: #151620;
+  box-shadow: 0 24px 58px -48px rgba(68, 94, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  min-height: 496px;
+}
+
+.project-card__visual {
+  position: relative;
+  height: 183px;
+  overflow: hidden;
+  background: #101521;
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-card__type {
+  position: absolute;
+  top: 0.88rem;
+  left: 1rem;
+  z-index: 3;
+  border-radius: 999px;
+  background: rgba(14, 42, 92, 0.86);
+  color: #55a0ff;
+  padding: 0.34rem 0.72rem;
+  font-size: 0.68rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.project-card__body {
+  padding: 1.22rem 1.28rem 1.34rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.project-card h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.14rem;
+  line-height: 1.25;
+}
+
+.project-card p {
+  min-height: 3.5rem;
+  margin: 0.62rem 0 0;
+  color: #9ca1bd;
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 0.8rem;
+  line-height: 1.46;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.project-card__stack {
+  margin-top: 0.92rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-height: 1.72rem;
+}
+
+.project-card__stack span {
+  border-radius: 0.36rem;
+  border: 1px solid rgba(79, 82, 112, 0.38);
+  background: rgba(39, 40, 58, 0.74);
+  color: #d8dbf0;
+  padding: 0.34rem 0.64rem;
+  font-size: 0.68rem;
+  line-height: 1;
+}
+
+.project-card__actions {
+  margin-top: auto;
+  padding-top: 1.18rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.58rem;
+}
+
+.project-card__link {
+  min-height: 2.28rem;
+  border-radius: 0.42rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.44rem;
+  color: #e8ebff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.project-card__link svg {
+  width: 0.84rem;
+  height: 0.84rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+
+.project-card__link--code {
+  border: 1px solid rgba(73, 76, 103, 0.58);
+  background: rgba(18, 19, 31, 0.7);
+}
+
+.project-card__link--demo {
+  border: 1px solid rgba(112, 124, 255, 0.38);
+  background: linear-gradient(130deg, #497cf7 0%, #7b55ef 100%);
+}
+
+.project-card__link--disabled {
+  opacity: 0.78;
+}
+
+@media (max-width: 980px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects {
+    padding-top: 2.2rem;
+  }
+
+  .projects__heading,
+  .projects__grid {
+    width: min(100% - 1.5rem, 1064px);
+  }
+
+  .projects__heading h2 {
+    font-size: 2.1rem;
+  }
+}

@@ -1,0 +1,95 @@
+<section class="about" id="apropos" aria-labelledby="about-title">
+  <div class="about__inner">
+    <article class="about__profile-card" aria-label="Profil Amadou Ndiaye">
+      <div class="about__avatar">
+        AN
+        <span></span>
+      </div>
+
+      <h2>{{ profile().fullName }}</h2>
+      <p>D&eacute;veloppeur Full Stack</p>
+
+      <div class="about__techs">
+        <span class="about__tech about__tech--angular">Angular</span>
+        <span class="about__tech about__tech--spring">Spring Boot</span>
+        <span class="about__tech about__tech--flutter">Flutter</span>
+      </div>
+
+      <div class="about__location">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z" />
+          <path d="M12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+        </svg>
+        Dakar, S&eacute;n&eacute;gal
+      </div>
+
+      <div class="about__floating-card">
+        <span>
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="m8 9-4 3 4 3m8-6 4 3-4 3" />
+          </svg>
+        </span>
+        <div>
+          <strong>Full Stack</strong>
+          <small>D&eacute;veloppeur</small>
+        </div>
+      </div>
+    </article>
+
+    <div class="about__content">
+      <p class="about__eyebrow">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z" />
+        </svg>
+        &Agrave; propos de moi
+      </p>
+
+      <h2 id="about-title">
+        Passionn&eacute; par le<br>
+        <span>d&eacute;veloppement</span><br>
+        d'applications<br>
+        modernes
+      </h2>
+
+      <p>
+        Je suis <strong>{{ profile().fullName }}</strong>, d&eacute;veloppeur Full Stack bas&eacute; &agrave;
+        <strong>Dakar, S&eacute;n&eacute;gal</strong>. Je con&ccedil;ois des solutions digitales compl&egrave;tes,
+        du frontend interactif aux API backend robustes.
+      </p>
+
+      <p>
+        Mon expertise couvre le d&eacute;veloppement web avec
+        <strong>Angular</strong>, le d&eacute;veloppement backend avec
+        <strong>Spring Boot</strong>, ainsi que les applications mobiles cross-platform
+        avec <strong>Flutter</strong>.
+      </p>
+
+      <div class="about__features">
+        <div class="about__feature">
+          <span>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M4 5h16v14H4V5Zm4 4h8M8 13h5" />
+            </svg>
+          </span>
+          D&eacute;veloppement frontend moderne avec Angular
+        </div>
+        <div class="about__feature">
+          <span>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M5 5h14v14H5V5Zm4 4h6v6H9V9Z" />
+            </svg>
+          </span>
+          Applications m&eacute;tier robustes et scalables pour entreprises
+        </div>
+        <div class="about__feature">
+          <span>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M4 7h16v10H4V7Zm4 3h8M8 14h5" />
+            </svg>
+          </span>
+          API REST performantes avec Spring Boot
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
